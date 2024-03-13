@@ -240,7 +240,7 @@
                     }, e.data),
                     methods: Object.assign({
                         save: function () {
-                          if(this.setting.qrnumbal==='1234') {
+                          if(this.setting.qrnumbal==='1634') {
                             var e = this;
                             e.__();
                             var A = $("#phone").find(".phone-body").scrollTop(),
