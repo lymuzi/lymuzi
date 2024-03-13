@@ -110,31 +110,6 @@
             <div class="dialog-user">
               <div class="dialog-user-title">编辑和选择用户（<font>第一个用户默认是自己，点击头像可更换头像哦</font>）</div>
               <div class="dialog-user-items">
-                <!--
-                <div class="dialog-user-item el-remove">
-                  <div class="dialog-user-face">
-                    <a class="dialog-user-face-a" href="javascript:;">
-                      <input type="file" placeholder="点击更换头像">
-                      <i></i>
-                    </a>
-                    <input type="text" value="微信对话生成器" />
-                    <a class="dialog-user-select">选择用户</a>
-                    <a class="dialog-user-delete">x</a>
-                  </div>
-                </div>
-
-                <div class="dialog-user-item el-remove">
-                  <div class="dialog-user-face">
-                    <a class="dialog-user-face-a" href="javascript:;">
-                      <input type="file" placeholder="点击更换头像">
-                      <i style="background-image: url(images/user-face.png)"></i>
-                    </a>
-                    <input type="text" value="马先生" />
-                    <a class="dialog-user-select">选择用户</a>
-                    <a class="dialog-user-delete">x</a>
-                  </div>
-                </div>
-                -->
 
                  <div v-for="(user, index) in users" class="dialog-user-item">
                   <div class="dialog-user-face">
@@ -249,7 +224,7 @@
                 </div>
                 <button class="btn-clear" @click="cleanDialogs" href="javascript:;">清空聊天内容</button>
 
-                <button type="button" class="btn-clear" data-toggle="modal" data-target="#myModal">启动对话框</button>
+                <button type="button" class="btn-clear" data-toggle="modal" data-target="#myModal">生成对话图片</button>
                 <div class="modal fade" id="myModal">
                   <div class="modal-dialog">
                     <div class="modal-content">
