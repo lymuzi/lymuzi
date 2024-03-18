@@ -163,8 +163,11 @@
                                 }));
                                 document.getElementById('preview-video').parentNode.style.display = 'block';
                                 document.querySelector("video").src = url;
+                                console.log(document.querySelector("video").src)
                             };
                             recorder.stop(); // 结束录制
+                          document.getElementById('downGif').disabled = false;
+
                             // 合成 Gif 图片
                             var gifUrl
                             gif.on('finished', function (blob) {
